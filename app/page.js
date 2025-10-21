@@ -65,16 +65,12 @@ export default function ModernLoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center animate-fadeInSlow">
       <div className="w-full max-w-md px-6">
-        {/* --- Khối login Liquid Glass mạnh --- */}
         <div
           className={`relative p-10 rounded-3xl overflow-hidden glass-login transition-all duration-700 transform ${
             animate ? "animate-slideOutLeft" : "animate-fadeInUp"
           }`}
         >
-          {/* Lớp phản sáng động */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.3),transparent_60%),radial-gradient(circle_at_70%_70%,rgba(120,200,255,0.25),transparent_60%)] opacity-60 mix-blend-overlay animate-[liquidMove_15s_linear_infinite]"></div>
-
-          {/* Nội dung */}
           <div className="relative z-10">
             <div className="flex justify-center mb-6">
               <img

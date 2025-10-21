@@ -13,8 +13,6 @@ export default function Dashboard() {
   return (
     <div className="relative h-[calc(100vh-56px)] bg-white flex flex-col justify-start px-12 py-10 overflow-hidden">
 
-
-      {/* --- Nội dung chính --- */}
       <h1 className="text-4xl font-bold text-gray-800 mt-1 mb-28 relative z-10">
         Xin chào, {username || "bạn"}!
       </h1>

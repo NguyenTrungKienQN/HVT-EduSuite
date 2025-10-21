@@ -11,10 +11,7 @@ export default function StudentDetail({ params }) {
   const [backUrl, setBackUrl] = useState(`/lop/${lop}`);
 
   useEffect(() => {
-    // Lấy thông tin học sinh
     getStudentDetail(uid_the).then((d) => setStudent(d.student || null));
-
-    // Kiểm tra trang trước để set nút "Quay lại"
     const prev = localStorage.getItem("previousPage");
     if (prev && prev.includes("/diemdanh/")) setBackUrl(`/diemdanh/${lop}`);
     else setBackUrl(`/lop/${lop}`);

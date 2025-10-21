@@ -26,7 +26,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="vi">
       <body className="bg-[#f9fafb] text-gray-800 transition-all duration-500 ease-out">
-        {/* Header */}
         {!hideSidebar && (
           <header
             className="h-14 flex items-center px-4 bg-white text-gray-800 
@@ -50,7 +49,6 @@ export default function RootLayout({ children }) {
               </div>
             </button>
 
-            {/* Logo */}
             <div
               onClick={() => (window.location.href = "/dashboard")}
               className="ml-4 flex items-center cursor-pointer hover:opacity-80 transition-all duration-300"
@@ -61,9 +59,7 @@ export default function RootLayout({ children }) {
           </header>
         )}
 
-        {/* Layout chính */}
         <div className="flex pt-14 min-h-screen overflow-hidden">
-          {/* Sidebar */}
           {!hideSidebar && (
             <aside
               className={`fixed top-14 left-0 bottom-0 w-72 bg-[#111827] text-white flex flex-col justify-between p-5 shadow-lg z-10
@@ -94,8 +90,6 @@ export default function RootLayout({ children }) {
               </div>
             </aside>
           )}
-
-          {/* Nội dung chính */}
           <main
             className={`flex-1 p-10 transition-all duration-500 ease-out 
                         ${hideSidebar ? "w-full" : "ml-0"} animate-fadeSlideIn`}

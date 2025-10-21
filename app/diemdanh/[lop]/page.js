@@ -22,7 +22,6 @@ export default function DiemDanhLop({ params }) {
 
   return (
     <div>
-      {/* Tiêu đề */}
       <div className="flex items-start justify-between mb-6">
         <div>
           <h1 className="text-4xl font-bold mb-2">Quản lý điểm danh</h1>
@@ -42,7 +41,6 @@ export default function DiemDanhLop({ params }) {
         Xuất Excel lớp {lop}
       </button>
 
-      {/* Bảng học sinh */}
       <div className="text-2xl font-semibold mb-3">Danh sách học sinh hôm nay</div>
       <table className="w-full border-collapse">
         <thead>
