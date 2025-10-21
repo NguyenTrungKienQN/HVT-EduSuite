@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./globals.css";
 
@@ -73,12 +74,12 @@ export default function RootLayout({ children }) {
               <div>
                 <div className="text-2xl font-semibold mb-6 text-gray-100">Menu</div>
                 <nav className="space-y-3">
-                  <a href="/lop" className="block hover:text-blue-400 font-medium transition-all duration-200">
+                  <Link href="/lop" className="block hover:text-blue-400 font-medium transition-all duration-200">
                     Lớp học
-                  </a>
-                  <a href="/diemdanh" className="block hover:text-blue-400 font-medium transition-all duration-200">
+                  </Link>
+                  <Link href="/diemdanh" className="block hover:text-blue-400 font-medium transition-all duration-200">
                     Quản lý điểm danh
-                  </a>
+                  </Link>
                 </nav>
               </div>
 
