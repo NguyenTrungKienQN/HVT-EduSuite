@@ -1,0 +1,13 @@
+#Node.js
+node_modules/
+.next/
+dist/
+*.log
+
+#Environment
+.env
+
+#System/IDE
+.DS_Store
+.vscode/
+.idea/
